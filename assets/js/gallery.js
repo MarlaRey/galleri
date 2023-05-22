@@ -27,7 +27,7 @@ function generateGrid() {
 //Tilføj eventlistener tilknyttet img'en, der kan det som beskrevet i clickSmall 
 function buildCard(myUrl) {
     let myArticleTag = document.createElement('article');
-    
+
     let myImageTag = document.createElement('img');
     myImageTag.src = myUrl;
     myImageTag.addEventListener('click', clickSmall);
@@ -39,15 +39,26 @@ function buildCard(myUrl) {
 
 //Kræver et event eller skal være eventlistener 
 //finder den url i myImages der er klikket på og send url til BuildBig 
-function clickSmall(event) {
-
+function clickSmall(myEvent) {
+    let myUrl = myEvent.target.src;
+    BuildBig(myUrl);
 }
 
+//kræver url
 //Kald clearApp 
 //Byg article element med img elemenet med scr fra url 
 //Tilføj eventlistener til billede med click der kalder generateGrid 
 function BuildBig(myUrl) {
+clearApp();
+let myArticleTag = document.createElement('article');
 
+let myImageTag = document.createElement('img');
+myImageTag.src = myUrl;
+myImageTag.addEventListener('click', generateGrid);
+
+myArticleTag.appendChild(myImageTag);
+
+myApp.appendChild(myArticleTag);
 }
 
 //slet alt html i app element 
