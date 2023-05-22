@@ -27,6 +27,7 @@ function generateGrid() {
 //Tilføj eventlistener tilknyttet img'en, der kan det som beskrevet i clickSmall 
 function buildCard(myUrl) {
     let myArticleTag = document.createElement('article');
+    myArticleTag.classList.add('galleryCard');
 
     let myImageTag = document.createElement('img');
     myImageTag.src = myUrl;
@@ -51,6 +52,8 @@ function clickSmall(myEvent) {
 function BuildBig(myUrl) {
 clearApp();
 let myArticleTag = document.createElement('article');
+
+myArticleTag.classList.add('detailView');
 
 let myImageTag = document.createElement('img');
 myImageTag.src = myUrl;
