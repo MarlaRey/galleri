@@ -6,7 +6,7 @@ window.addEventListener("load", generateGrid);
 
 
 // globale variabler
-// let myData = null; //til data objekt opgaven
+
 const myImages = []; // til array opgaven, byg dit array af billed urlér her.
 const myApp = document.getElementById("app");
 
@@ -27,6 +27,18 @@ function buildCard(myUrl){
 //Kræver et event eller skal være eventlistener 
 //finder den url i myImages der er klikket på og send url til BuildBig 
 function clickSmall(event){
+
+}
+
+//Kald clearApp 
+//Byg article element med img elemenet med scr fra url 
+//Tilføj eventlistener til billede med click der kalder generateGrid 
+function BuildBig(myUrl){
+
+}
+
+//slet alt html i app element 
+function clearApp(){
 
 }
 
