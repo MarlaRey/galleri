@@ -7,7 +7,9 @@ window.addEventListener("load", generateGrid);
 
 // globale variabler
 
-const myImages = ['assets/img/Brachypelma_smithi.jpg', 'assets/img/elephant.jpg', 'assets/img/great-white.jpg', 'assets/img/koala.jpg', 'assets/img/standard_tiger.jpg']; // til array opgaven, byg dit array af billed urlér her.
+const myImages = ['assets/img/Brachypelma_smithi.jpg', 'assets/img/elephant.jpg', 'assets/img/great-white.jpg', 'assets/img/koala.jpg', 'assets/img/standard_tiger.jpg']; 
+
+
 const myApp = document.getElementById("app");
 
 //Kalder funktionen Clear app 
