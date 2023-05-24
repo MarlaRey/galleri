@@ -1,0 +1,60 @@
+Variabler: 
+myImages: Array der indeholder relative url'er til billeder i img-mappen. Husk relativ til HTML filen. 
+
+Myapp:  reference til app domelementet. 
+ 
+
+ 
+
+Funktioner: 
+
+Pageload event-handler kalder funktionen generateGrid 
+ 
+
+GenerateGrid:  
+
+Kalder funktionen Clear app 
+
+Loop gennem array'et myImages og send url til buildCard 
+
+ 
+
+BuildCard:  
+
+Kræver en url 
+
+Opretter article tag 
+
+I article tag skal der oprettes et img tag med src fra tilsendt url 
+
+Add article til app dom element 
+
+Tilføj eventlistener der kan det som beskrevet i clickSmall 
+
+ 
+
+Klik lille billede event-handler kalder eventet clickSmall 
+
+ 
+
+ClickSmall  
+
+Kræver et event eller skal være eventlistener 
+
+finder den url i myImages der er klikket på og send url til BuildBig 
+
+ 
+
+BuildBig  
+
+Kræver url  
+
+Kald clearApp 
+
+Byg article elemenet med img elemenet med scr fra url 
+
+Tilføj eventlistener til billede med click der kalder generateGrid 
+
+ 
+
+ClearApp slet alt html i app element 
